@@ -1,11 +1,11 @@
 import datetime
 
 
-class datedelta:
+class datedelta(object):
 
     __slots__ = ['_years', '_months', '_days']
 
-    def __init__(self, *, years=0, months=0, days=0):
+    def __init__(self, years=0, months=0, days=0):
         int_years = int(years)
         int_months = int(months)
         int_days = int(days)
